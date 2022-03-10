@@ -4,14 +4,14 @@ import java.util.Date;
 
 import javax.validation.constraints.Size;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonFilter;
 
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-@JsonIgnoreProperties({"name", "id"})
+@JsonFilter(value = "UserDynamicFilter")
 public class User {
 	
 	private Integer id;
