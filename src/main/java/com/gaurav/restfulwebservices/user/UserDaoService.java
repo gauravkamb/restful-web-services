@@ -12,10 +12,10 @@ public class UserDaoService {
 	private static int userIdCount = 4;
 	
 	static {
-		userlist.add(new User(1, "A", new Date()));
-		userlist.add(new User(2, "B", new Date()));
-		userlist.add(new User(3, "C", new Date()));
-		userlist.add(new User(4, "D", new Date()));
+		userlist.add(new User(1, "A", new Date(),null));
+		userlist.add(new User(2, "B", new Date(),null));
+		userlist.add(new User(3, "C", new Date(),null));
+		userlist.add(new User(4, "D", new Date(),null));
 	}
 	
 	public List<User> findAll(){
