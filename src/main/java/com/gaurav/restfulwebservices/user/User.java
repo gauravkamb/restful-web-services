@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Builder
-@JsonFilter(value = "UserDynamicFilter")
+//@JsonFilter(value = "UserDynamicFilter")
 public class User {
 	
 	private Integer id;
